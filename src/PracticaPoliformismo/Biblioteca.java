@@ -93,23 +93,11 @@ public class Biblioteca {
           }
         }
     }
-    public void ordenar(){
-        for(int i = 0; i<getNrolibros(); i++){
-            for(int j = 0; j<3; j++){
-                if(libro[i][1].compareToIgnoreCase(libro[i+1][1])<0){
-                    String aux = libro[i][1];
-                    libro[i][1] = libro[i+1][1];
-                    libro[i+1][1] = aux;
-                }
-                System.out.println(libro[i][1]);
-            }           
-        }
-    }
+    
     
     public static void main(String[] args){
         Biblioteca b1 = new Biblioteca();
         b1.mostrar();
         b1.mostrar("Jordan Peterson");
-        b1.ordenar();
     }
 }

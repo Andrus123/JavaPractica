@@ -10,5 +10,6 @@ package PracticaPoliformismo;
  * @author andru
  */
 public class Frase {
-    
+        private String titulo;
+        
 }
