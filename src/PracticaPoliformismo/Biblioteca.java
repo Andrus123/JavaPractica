@@ -19,9 +19,9 @@ public class Biblioteca {
     public Biblioteca(){
         this.nombre = "Biblioteca Central";
         this.nrolibros = 3;
-        this.libro[0][0] = "12 Rules for Live"; this.libro[0][1] = "Autoayuda"; 
-        this.libro[1][0] = "Clean Code";        this.libro[1][1] = "Tecnología"; 
-        this.libro[2][0] = "Superintelligence"; this.libro[2][1] = "Tecnología"; 
+        this.libro[0][0] = "12 Rules for Live"; this.libro[0][1] = "Jordan Peterson"; this.libro[0][2] = "Autoayuda"; 
+        this.libro[1][0] = "Clean Code";        this.libro[1][1] = "Robert Martin";   this.libro[1][2] = "Tecnologia"; 
+        this.libro[2][0] = "Superintelligence"; this.libro[2][1] = "Nick Bostrom";    this.libro[2][2] = "Tecnologia"; 
     }
 
     public Biblioteca(String nombre, int nrolibros) {
@@ -64,11 +64,14 @@ public class Biblioteca {
         System.out.println("Número de libros: ");
         this.nrolibros = Leer.datoInt();
         for (int i = 0; i < getNrolibros(); i++){
-            for ( int j = 0; j<2; j++){
+            for ( int j = 0; j<3; j++){
                 if (j == 0){
                     System.out.println("Titulo: ");
                 }
                 if (j == 1){
+                    System.out.println("Autor: ");
+                }
+                if (j == 2){
                     System.out.println("Categoria: ");
                 }
                 libro[i][j] = Leer.dato();
@@ -78,16 +81,35 @@ public class Biblioteca {
     public void mostrar(){
         System.out.println("BIBLIOTECA: " + getNombre());
         System.out.println("Libros disponibles: " + getNrolibros());
-        System.out.println("Titulo:     Categoría:");
+        System.out.println("Titulo:          Autor:              Categoría:");
         for (int i =0; i < getNrolibros();i++){
-            System.out.println(libro[i][0] + "  "+libro[i][1]);
+            System.out.println(libro[i][0] + "  "+libro[i][1]+ " "+libro[i][2]);
+        }
+    }
+    public void mostrar(String x){
+        for(int i = 0; i< getNrolibros(); i++){
+          if(x == libro[i][1]){
+              System.out.println(libro[i][0]);
+          }
+        }
+    }
+    public void ordenar(){
+        for(int i = 0; i<getNrolibros(); i++){
+            for(int j = 0; j<3; j++){
+                if(libro[i][1].compareToIgnoreCase(libro[i+1][1])<0){
+                    String aux = libro[i][1];
+                    libro[i][1] = libro[i+1][1];
+                    libro[i+1][1] = aux;
+                }
+                System.out.println(libro[i][1]);
+            }           
         }
     }
     
     public static void main(String[] args){
         Biblioteca b1 = new Biblioteca();
         b1.mostrar();
+        b1.mostrar("Jordan Peterson");
+        b1.ordenar();
     }
-    
-    
 }
