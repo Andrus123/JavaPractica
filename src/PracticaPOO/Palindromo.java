@@ -58,9 +58,13 @@ public class Palindromo {
     
     public static void main(String[] args){
         Palindromo p1 = new Palindromo();
+        Palindromo p2 = new Palindromo();
         p1.leer();
         p1.mostrar();
         p1.verificar();
+        p2.leer();
+        p2.mostrar();
+        p2.verificar();
     }
     
     
