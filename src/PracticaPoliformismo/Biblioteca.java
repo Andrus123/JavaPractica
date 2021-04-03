@@ -25,7 +25,11 @@ public class Biblioteca {
     public Biblioteca(String nombre, int nrolibros) {
         this.nombre = nombre;
         this.nrolibros = nrolibros;
-        for (int i=0; i<)
+        for(int i = 0; i < 40; i++){
+            for (int j = 0; j< 3;j++){
+                libro[i][j] = "";
+            }
+        }
     }
     
     
