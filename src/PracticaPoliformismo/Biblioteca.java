@@ -14,4 +14,13 @@ public class Biblioteca {
     private int nrolibros;
     private String[][] libro = new String[40][3];
     
+    public Biblioteca(){
+        this.nombre = "Biblioteca Central";
+        this.nrolibros = 3;
+        this.libro[0][0] = "12 Rules for Live"; this.libro[0][0] = "Autoayuda"; 
+        this.libro[1][0] = "Clean Code";        this.libro[0][0] = "Tecnología"; 
+        this.libro[2][0] = "Superintelligence"; this.libro[0][0] = "Tecnología"; 
+    }
+    
+    
 }
