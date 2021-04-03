@@ -88,6 +88,14 @@ public class Banco {
         System.out.println("Cliente: " + getPaterno()+" "+getMaterno()+" "+getNombres());
         System.out.println("Saldo: " + getSaldo());
     }
+    public  static void cliente(){
+        Banco c3 = new Banco();
+        System.out.println("Ingrese el ci: ");
+        c3.ci = Leer.datoInt();
+        System.out.println("Ingrese el saldo: ");
+        c3.saldo = Leer.datoDouble();
+        c3.mostrar();
+    }
     
     public static void main(String[] args){
         Banco c1 = new Banco();
@@ -95,5 +103,6 @@ public class Banco {
         c1.mostrar();
         c2.leer();
         c2.mostrar();
+        cliente();
     }
 }
