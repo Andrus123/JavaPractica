@@ -21,6 +21,13 @@ public class Biblioteca {
         this.libro[1][0] = "Clean Code";        this.libro[0][0] = "Tecnología"; 
         this.libro[2][0] = "Superintelligence"; this.libro[0][0] = "Tecnología"; 
     }
+
+    public Biblioteca(String nombre, int nrolibros) {
+        this.nombre = nombre;
+        this.nrolibros = nrolibros;
+        for (int i=0; i<)
+    }
+    
     
     
 }
