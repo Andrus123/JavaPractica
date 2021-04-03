@@ -88,21 +88,39 @@ public class Banco {
         System.out.println("Cliente: " + getPaterno()+" "+getMaterno()+" "+getNombres());
         System.out.println("Saldo: " + getSaldo());
     }
-    public  static void cliente(){
-        Banco c3 = new Banco();
+    public void cliente(){
         System.out.println("Ingrese el ci: ");
-        c3.ci = Leer.datoInt();
+        ci = Leer.datoInt();
         System.out.println("Ingrese el saldo: ");
-        c3.saldo = Leer.datoDouble();
-        c3.mostrar();
+        saldo = Leer.datoDouble();
+        System.out.println("NUEVO CLIENTE: Ci "+getCi()+" Saldo "+getSaldo());
+    }
+    
+    public static void buscar(Banco x, Banco y, Banco z){
+        System.out.println("Ingrese ci para buscar en la base de datos: ");
+        int c = Leer.datoInt();
+        if(c == x.ci){
+            x.mostrar();
+        }
+        else if(c == y.ci){
+            y.mostrar();
+        }
+        else if(c == z.ci){
+            z.mostrar();
+        }
+        else{
+            System.out.println("El ci ingresado no se encuentra registrado");
+        }
     }
     
     public static void main(String[] args){
         Banco c1 = new Banco();
         Banco c2 = new Banco(12357, "Quiroga");
+        Banco c3 = new Banco();
         c1.mostrar();
         c2.leer();
         c2.mostrar();
-        cliente();
+        c3.cliente();
+        buscar(c1,c2,c3);
     }
 }
