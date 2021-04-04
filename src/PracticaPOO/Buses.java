@@ -124,13 +124,13 @@ public class Buses {
         Buses b3 = new Buses("RICK9U",50,3);
         
         b1.mostrar();;
-//        b2.leer();
-//        b2.mostrar();
-//        b3.leer();
-//        b3.mostrar();
+        b2.leer();
+        b2.mostrar();
+        b3.leer();
+        b3.mostrar();
         
         b1.mostrar("Susan",b1);
-//        b2.mostrar("Cristiano",b2);
-//        b3.mostrar("Mauren",b3);
+        b2.mostrar("Cristiano",b2);
+        b3.mostrar("Mauren",b3);
     }
 }
