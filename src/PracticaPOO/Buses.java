@@ -6,7 +6,6 @@
 package PracticaPOO;
 
 import Estudiante.Leer;
-import java.util.Arrays;
 
 /**
  *
@@ -23,7 +22,7 @@ public class Buses {
             this.capacidad = 50;
             this.nropasajeros = 9;
             this.pasajero[0][0] = "Jhona";   this.pasajero[0][1] = "Masculino"; this.pasajero[0][2] = "24";
-            this.pasajero[1][0] = "Fabri";   this.pasajero[1][1] = "Femenino";  this.pasajero[1][2] = "29";
+            this.pasajero[1][0] = "Fabiana"; this.pasajero[1][1] = "Femenino";  this.pasajero[1][2] = "29";
             this.pasajero[2][0] = "Marcelo"; this.pasajero[2][1] = "Masculino"; this.pasajero[2][2] = "24";
             this.pasajero[3][0] = "Totto";   this.pasajero[3][1] = "Masculino"; this.pasajero[3][2] = "23";
             this.pasajero[4][0] = "Chris";   this.pasajero[4][1] = "Masculino"; this.pasajero[4][2] = "24";
@@ -149,21 +148,21 @@ public class Buses {
         Buses b2 = new Buses("PLT124",60,3);
         Buses b3 = new Buses("RICK9U",50,3);
         
-        b1.mostrar();;
-//        b2.leer();
-//        b2.mostrar();
-//        b3.leer();
-//        b3.mostrar();
+        b2.leer();
+        b2.mostrar();
+        b3.leer();
+        b3.mostrar();
         
-//        b1.mostrar("Susan",b1);
-//        b2.mostrar("Cristiano",b2);
-//        b3.mostrar("Mauren",b3);
+        b1.mostrar("Andres",b1);
+        b2.mostrar("Cristiano",b2);
+        b3.mostrar("Mauren",b3);
+        
         System.out.println("BUS ORDENADO: ");
         b1.ordenar();
         b1.mostrar();
-//        b2.ordenar(b2);
-//        b2.mostrar();
-//        b3.ordenar(b3);
-//        b2.mostrar();
+        b2.ordenar();
+        b2.mostrar();
+        b3.ordenar();
+        b3.mostrar();
     }
 }
