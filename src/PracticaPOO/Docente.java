@@ -148,10 +148,10 @@ public class Docente {
     public static void main(String[] args){
         Docente d1 = new Docente();
         Docente d2 = new Docente();
-        //d1.leer();
+        d1.leer();
         d1.mostrar();
-        //d2.leer();
+        d2.leer();
         d1.mostrarD(d1);
-        //d2.mostrarD(d2);
+        d2.mostrarD(d2);
     }
 }
