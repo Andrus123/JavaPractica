@@ -33,17 +33,19 @@ public class Chalet extends Casa {
         this.mJardin = mJardin;
     }
 
+    @Override
     public void mostrar() {
         super.mostrar();
         System.out.println("Jardin: " + getmJardin());
     }
 
+    @Override
     public void leer() {
         super.leer();
         System.out.println("Jardin: ");
         setmJardin(Leer.datoInt());
     }
-    
+    //a)
     public boolean cantidadMetros(Chalet c2){
         return(this.getmJardin()>c2.getmJardin());
     }

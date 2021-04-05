@@ -32,14 +32,19 @@ public class Departamento extends Casa {
     public void setnHabitaciones(int nHabitaciones) {
         this.nHabitaciones = nHabitaciones;
     }
-    
-    public void mostrar(){
+
+    public void mostrar() {
         super.mostrar();
         System.out.println("Nro. Habitaciones: " + getnHabitaciones());
     }
-    public void leer(){
+
+    public void leer() {
         super.leer();
         System.out.println("Nro Habitaciones: ");
         setnHabitaciones(Leer.datoInt());
+    }
+    //b)
+    public boolean minHabitaciones(Departamento d2) {
+        return (this.getnHabitaciones() < d2.getnHabitaciones());
     }
 }
