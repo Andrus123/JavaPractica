@@ -43,4 +43,8 @@ public class Chalet extends Casa {
         System.out.println("Jardin: ");
         setmJardin(Leer.datoInt());
     }
+    
+    public boolean cantidadMetros(Chalet c2){
+        return(this.getmJardin()>c2.getmJardin());
+    }
 }
