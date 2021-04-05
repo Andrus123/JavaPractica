@@ -21,10 +21,16 @@ public class Buses {
         public Buses(){
             this.placa = "XLN345";
             this.capacidad = 50;
-            this.nropasajeros = 3;
-            this.pasajero[0][0] = "Juan";  this.pasajero[0][1] = "Masculino"; this.pasajero[0][2] = "24";
-            this.pasajero[1][0] = "Susan"; this.pasajero[1][1] = "Femenino";  this.pasajero[1][2] = "29";
-            this.pasajero[2][0] = "Peter"; this.pasajero[2][1] = "Masculino"; this.pasajero[2][2] = "48";
+            this.nropasajeros = 9;
+            this.pasajero[0][0] = "Jhona";   this.pasajero[0][1] = "Masculino"; this.pasajero[0][2] = "24";
+            this.pasajero[1][0] = "Fabri";   this.pasajero[1][1] = "Femenino";  this.pasajero[1][2] = "29";
+            this.pasajero[2][0] = "Marcelo"; this.pasajero[2][1] = "Masculino"; this.pasajero[2][2] = "24";
+            this.pasajero[3][0] = "Totto";   this.pasajero[3][1] = "Masculino"; this.pasajero[3][2] = "23";
+            this.pasajero[4][0] = "Chris";   this.pasajero[4][1] = "Masculino"; this.pasajero[4][2] = "24";
+            this.pasajero[5][0] = "Oscar";   this.pasajero[5][1] = "Masculino"; this.pasajero[5][2] = "26";
+            this.pasajero[6][0] = "Emo";     this.pasajero[6][1] = "Masculino"; this.pasajero[6][2] = "24";
+            this.pasajero[7][0] = "Andres";  this.pasajero[7][1] = "Masculino"; this.pasajero[7][2] = "23";
+            this.pasajero[8][0] = "Carlo";   this.pasajero[8][1] = "Masculino"; this.pasajero[8][2] = "25";
         }
         public Buses(String placa, int cap, int np){
             this.placa = placa;
@@ -116,6 +122,26 @@ public class Buses {
             System.out.println("El pasajero no se encuentra registrado");
         }
     }
+    public void ordenar(){
+        for(int i = 0; i< getNropasajeros(); i++){
+            for(int j = 0;j<getNropasajeros()&& i!=j;j++){
+                if(pasajero[i][0].compareToIgnoreCase(pasajero[j][0])<0){
+                    String aux = pasajero[i][0];
+                    pasajero[i][0] = pasajero[j][0];
+                    pasajero[j][0] = aux;
+                    //Para el genero
+                    String aux1 = pasajero[i][1];
+                    pasajero[i][1] = pasajero[j][1];
+                    pasajero[j][1] =aux1;
+                    //Para la edad
+                    String aux2 = pasajero[i][2];
+                    pasajero[i][2] = pasajero[j][2];
+                    pasajero[j][2] =aux2;
+                }
+            }
+        }
+        
+    }
     
     
     public static void main(String[] args){
@@ -124,13 +150,20 @@ public class Buses {
         Buses b3 = new Buses("RICK9U",50,3);
         
         b1.mostrar();;
-        b2.leer();
-        b2.mostrar();
-        b3.leer();
-        b3.mostrar();
+//        b2.leer();
+//        b2.mostrar();
+//        b3.leer();
+//        b3.mostrar();
         
-        b1.mostrar("Susan",b1);
-        b2.mostrar("Cristiano",b2);
-        b3.mostrar("Mauren",b3);
+//        b1.mostrar("Susan",b1);
+//        b2.mostrar("Cristiano",b2);
+//        b3.mostrar("Mauren",b3);
+        System.out.println("BUS ORDENADO: ");
+        b1.ordenar();
+        b1.mostrar();
+//        b2.ordenar(b2);
+//        b2.mostrar();
+//        b3.ordenar(b3);
+//        b2.mostrar();
     }
 }
