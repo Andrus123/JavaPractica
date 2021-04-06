@@ -101,8 +101,8 @@ public class Frase {
         f1.mostrar();
         f1.mostrar(5);
         f1.mostrar(7, 14);
-//        f2.leer();
-//        f2.mostrar();
+        f2.leer();
+        f2.mostrar();
     }
         
 }
