@@ -22,12 +22,14 @@ public class Principal {
         ch1.cerrarVentanas(1);
         ch1.mostrar();
 
+       System.out.println("");
+       System.out.println("Maxima cantidad de metros");
         if (ch1.cantidadMetros(ch2)) {
             ch1.mostrar();
         } else {
             ch2.mostrar();
         }
-
+        System.out.println("");
         Departamento d1 = new Departamento();
         d1.leer();
         Departamento d2 = new Departamento(4, 3, "Plomo", 8);
@@ -38,5 +40,15 @@ public class Principal {
         } else {
             d2.mostrar();
         }
+        System.out.println("");
+        
+        Departamento ad1 = new Departamento();
+        System.out.println("CREANDO ARRAY DE OBJETOS DE TIPO DEPARTAMENTO");
+        ad1.crearArrayDeptos();
+        System.out.println("DEPARTAMENTOS DEL EDIFICIO COSMOS");
+        ad1.mostrarArrayDeptos();
+        System.out.println("DEPARTAMENTOS CON LA CANTIDAD MAX Y MIN DE HABITACIONES");
+        ad1.maxMinDeptos();
+        
     }
 }
