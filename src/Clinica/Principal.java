@@ -42,5 +42,13 @@ public class Principal {
             pacientes[i] = new Paciente();
             pacientes[i].leer();
         }
+        
+        int cantidad = 0;
+        for(int i=0;i<pacientes.length;i++){
+            if(pacientes[i].buscarPaciente("covid-19")){
+                cantidad+=1;
+                System.out.println("Nombre: " + pacientes[i].getNombre());
+            }
+        }
     }
 }

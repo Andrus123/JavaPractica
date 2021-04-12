@@ -37,4 +37,8 @@ public class Paciente extends Persona{
         super.mostrar();
         System.out.println("Diagnostico del paciente: " + getDiagnostico());
     }
+    
+    public boolean buscarPaciente(String dg){
+        return this.getDiagnostico().equals(dg);
+    }
 }
