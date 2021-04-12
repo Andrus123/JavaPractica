@@ -34,5 +34,13 @@ public class Principal {
         }else{
             System.out.println("Nombre: "+g2.getNombre()+" cantidad: "+g2.getContrPre());
         }
+        //d)
+        System.out.println("Cuantos Pacientes: ");
+        int n = Leer.datoInt();
+        Paciente[] pacientes = new Paciente[n];
+        for(int i=0;i<pacientes.length;i++){
+            pacientes[i] = new Paciente();
+            pacientes[i].leer();
+        }
     }
 }
