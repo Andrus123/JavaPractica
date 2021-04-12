@@ -44,11 +44,13 @@ public class Principal {
         }
         
         int cantidad = 0;
+        System.out.println("Pacientes con covid-19: ");
         for(int i=0;i<pacientes.length;i++){
             if(pacientes[i].buscarPaciente("covid-19")){
                 cantidad+=1;
                 System.out.println("Nombre: " + pacientes[i].getNombre());
             }
         }
+        System.out.println("Cantidad de pacientes con Covid-19: " + cantidad);
     }
 }
