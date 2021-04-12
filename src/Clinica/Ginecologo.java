@@ -40,4 +40,13 @@ public class Ginecologo extends Medico {
         super.mostrar();
         System.out.println("Control prenatal: "+ getContrPre());
     }
+    
+    //b)
+    public boolean comparaNombre(Ginecologo g2){
+        return this.getNombre().compareTo(g2.getNombre()) == 0;
+    }
+    //c)
+    public boolean comparaContPre(Ginecologo g2){
+        return this.getContrPre()>g2.getContrPre();
+    }
 }

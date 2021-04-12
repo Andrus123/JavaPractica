@@ -22,5 +22,17 @@ public class Principal {
         g1.mostrar();
         System.out.println("");
         g2.mostrar();
+        
+        if(g1.comparaNombre(g2)){
+            System.out.println("Los nombres son iguales: " + g1.getNombre()+"-"+g2.getNombre());
+        }else{
+            System.out.println("Los nombres son diferentes: " + g1.getNombre()+"-"+g2.getNombre());
+        }
+        
+        if(g1.comparaContPre(g2)){
+            System.out.println("Nombre: "+g1.getNombre()+" cantidad: "+g1.getContrPre());
+        }else{
+            System.out.println("Nombre: "+g2.getNombre()+" cantidad: "+g2.getContrPre());
+        }
     }
 }
