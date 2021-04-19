@@ -33,8 +33,16 @@ public class Piso {
     public void leer(){
         System.out.println("Numero de aulas: ");
         setNa(Leer.datoInt());
-        for(int i=0;i<=getNa();i++){
+        for(int i=1;i<=getNa();i++){
+            System.out.println("Aula: "+i);
             aulas[i].leer();
+        }
+    }
+    public void mostrar(){
+        System.out.println("Numero de aulas: " + getNa());
+        for(int i=1;i<getNa();i++){
+            System.out.println("Aula: " + i);
+            aulas[i].mostrar();
         }
     }
     
