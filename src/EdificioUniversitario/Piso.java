@@ -41,7 +41,7 @@ public class Piso {
     public void mostrar(){
         System.out.println("Numero de aulas: " + getNa());
         for(int i=1;i<getNa();i++){
-            System.out.println("Aula: " + i);
+            System.out.print("Aula: " + i);
             aulas[i].mostrar();
         }
     }
