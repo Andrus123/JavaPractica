@@ -81,7 +81,7 @@ public class Departamento extends Casa {
             }
             if (deptos.get(i).getnHabitaciones()<min){
                 min = deptos.get(i).getnHabitaciones();
-                dep[i] = deptos.get(i);
+                dep[1] = deptos.get(i);
             }
         }
         System.out.println("Departamento con MAX Habi.");

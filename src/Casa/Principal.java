@@ -35,6 +35,7 @@ public class Principal {
         Departamento d2 = new Departamento(4, 3, "Plomo", 8);
         d1.mostrar();
         d2.mostrar();
+        System.out.println("Minima cantidad de habitaciones");
         if (d1.minHabitaciones(d2)) {
             d1.mostrar();
         } else {
