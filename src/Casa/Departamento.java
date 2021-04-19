@@ -37,11 +37,13 @@ public class Departamento extends Casa {
         this.nHabitaciones = nHabitaciones;
     }
 
+    @Override
     public void mostrar() {
         super.mostrar();
         System.out.println("Nro. Habitaciones: " + getnHabitaciones());
     }
 
+    @Override
     public void leer() {
         super.leer();
         System.out.println("Nro Habitaciones: ");
