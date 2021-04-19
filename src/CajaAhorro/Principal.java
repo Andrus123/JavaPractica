@@ -84,6 +84,10 @@ public class Principal {
                     m1 = clientes[i];
                     break;
                 }
+                else{
+                    System.out.println("El número ingresado no se encuentra registrado");
+                    System.exit(1);
+                }
             }
             
             System.out.println("INFORMACION DEL CLIENTE DE CAJA AHORRO");
