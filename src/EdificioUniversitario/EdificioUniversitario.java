@@ -46,16 +46,16 @@ public class EdificioUniversitario {
         String nomU = JOptionPane.showInputDialog("Nombre del edificio Universitario:", "UMSA");
         setNombre(nomU);
         setNp(Integer.parseInt(JOptionPane.showInputDialog("Numero de pisos", "1")));
-        for (int i = 0; i <= getNp(); i++) {
-            System.out.print("Piso: " + i);
+        for (int i = 1; i <= getNp(); i++) {
+            System.out.println("Piso: " + i);
             pisos[i].leer();
         }
     }
 
     public void mostrar() {
         System.out.println("Nombre del edificio Universitario: " + getNombre());
-        for (int i = 0; i <= getNp(); i++) {
-            System.out.print("Piso: " + i);
+        for (int i = 1; i <= getNp(); i++) {
+            System.out.println("Piso: " + i);
             pisos[i].mostrar();
         }
     }

@@ -5,7 +5,7 @@
  */
 package EdificioUniversitario;
 
-import Clinica.Leer;
+
 
 /**
  *
