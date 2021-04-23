@@ -59,5 +59,22 @@ public class EdificioUniversitario {
             pisos[i].mostrar();
         }
     }
-
+    public void aulaPisoCap(int x){
+        int sw=0;
+        for(int i=1;i<=getNp();i++){
+            for(int j=1;j<=pisos[i].getNa();j++){
+               if(x==pisos[i].getCapAula(j)){
+                   System.out.println("El Aula de capacidad: "+x+" esta en el piso: "+i+" nombre: "+pisos[i].getNomAula(j));
+                   sw = 1;
+                   break;
+               } 
+            }
+            if(sw != 0){
+                break;
+            }
+        }
+        if(sw == 0){
+            System.out.println("El aula con capacidad: "+x+" no fue encontrado¡");
+        }
+    }
 }

@@ -10,9 +10,11 @@ package EdificioUniversitario;
  * @author Andrés Aquin
  */
 public class Principal {
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         EdificioUniversitario ed1 = new EdificioUniversitario();
         ed1.leer();
         ed1.mostrar();
+        ed1.aulaPisoCap(20);
     }
 }

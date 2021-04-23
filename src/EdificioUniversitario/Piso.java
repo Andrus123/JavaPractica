@@ -44,5 +44,11 @@ public class Piso {
             aulas[i].mostrar();
         }
     }
+    public int getCapAula(int a){
+        return aulas[a].getCap();
+    }
     
+    public String getNomAula(int a){
+        return aulas[a].getNom();
+    }
 }
