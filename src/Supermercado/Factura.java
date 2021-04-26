@@ -33,18 +33,23 @@ public class Factura extends Comprobante {
         productos[pos] = p;
         setTotal(getTotal() + p.getPrecio());
     }
-    
-    public void mostrarProductos(){
-        for(int i=1; i<=2 ; i++){
-            System.out.println("\t"+productos[i].getCodigo());
-            System.out.println("\t"+productos[i].getDescripcion());
-            System.out.println("\t"+productos[i].getPrecio());
+
+    public void mostrarProductos() {
+        for (int i = 1; i <= 2; i++) {
+            System.out.print("\t" + productos[i].getCodigo());
+            System.out.print("\t" + productos[i].getDescripcion());
+            System.out.println("\t" + productos[i].getPrecio());
         }
     }
-    
-    public void mostrarFactura(){
-        System.out.println("Tipo: "+getTipo()+" Numero: "+getNumero()
-                +" Fecha: "+getFecha().getDia()+"/"+getFecha().getMes()+"/"+getFecha().getAnio()); 
+
+    public void mostrarFactura() {
+        System.out.println("Tipo: " + getTipo() + " Numero: " + getNumero()
+                + " Fecha: " + getFecha().getDia() + "/" + getFecha().getMes() + "/" + getFecha().getAnio());
                 //Accedemos a getDia solo porque existe una relacion de agregacion de Fecha a Comprobante
+        System.out.println("CI: " + clientes.getCi() + "\nNombres: " + clientes.getNombre());
+        System.out.println("Detalle de productos");
+        mostrarProductos();
+        System.out.println("\n\t\tTotal: " +"\t"+ getTotal());
     }
+    
 }
