@@ -21,7 +21,7 @@ public class Factura {
     public Factura() {
         this.fecha = "";
         c1 = new Cliente();
-        productos = new Producto[3];
+        productos = new Producto[3]; //Relacion por composición
     }
 
     public String getFecha() {
