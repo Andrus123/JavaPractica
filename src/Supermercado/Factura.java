@@ -9,6 +9,36 @@ package Supermercado;
  *
  * @author Andrés Aquin
  */
-public class Factura {
+public class Factura extends Comprobante {
+
+    private double total;
+    private Cliente clientes;
+    private Producto[] productos;
+
+    public Factura(char t, int n, Fecha f, Cliente c, Producto[] p) {
+        super(t, n, f);
+        this.clientes = c;
+        productos = p;
+    }
+
+    public double getTotal() {
+        return total;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
+    }
+
+    public void agregarProducto(Producto p, int pos) {
+        productos[pos] = p;
+        setTotal(getTotal() + p.getPrecio());
+    }
     
+    public void mostrarProductos(){
+        for(int i=1; i<=2 ; i++){
+            System.out.println("\t"+productos[i].getCodigo());
+            System.out.println("\t"+productos[i].getDescripcion());
+            System.out.println("\t"+productos[i].getPrecio());
+        }
+    }
 }
