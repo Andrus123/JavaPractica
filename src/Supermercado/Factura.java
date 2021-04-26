@@ -41,4 +41,10 @@ public class Factura extends Comprobante {
             System.out.println("\t"+productos[i].getPrecio());
         }
     }
+    
+    public void mostrarFactura(){
+        System.out.println("Tipo: "+getTipo()+" Numero: "+getNumero()
+                +" Fecha: "+getFecha().getDia()+"/"+getFecha().getMes()+"/"+getFecha().getAnio()); 
+                //Accedemos a getDia solo porque existe una relacion de agregacion de Fecha a Comprobante
+    }
 }
