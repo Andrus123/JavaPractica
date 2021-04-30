@@ -9,6 +9,49 @@ package ClaseAbstracta;
  *
  * @author Andrés Aquin
  */
-public class Interino {
+public class Interino extends Docente{
+    private int diasTrabajados;
+    private double sueldoPorDia;
+    
+    public Interino(){
+        super();
+        this.diasTrabajados=0;
+        this.sueldoPorDia=500;
+    }
+
+    public Interino(int diasTrabajados, double sueldoPorDia) {
+        this.diasTrabajados = diasTrabajados;
+        this.sueldoPorDia = sueldoPorDia;
+    }
+
+    public Interino(int ci, String nombres, String apellidos, int aIngreso,int diasTrabajados, double sueldoPorDia) {
+        super(ci, nombres, apellidos, aIngreso);
+        this.diasTrabajados = diasTrabajados;
+        this.sueldoPorDia = sueldoPorDia;
+    }
+
+    public int getDiasTrabajados() {
+        return diasTrabajados;
+    }
+
+    public void setDiasTrabajados(int diasTrabajados) {
+        this.diasTrabajados = diasTrabajados;
+    }
+
+    public double getSueldoPorDia() {
+        return sueldoPorDia;
+    }
+
+    public void setSueldoPorDia(double sueldoPorDia) {
+        this.sueldoPorDia = sueldoPorDia;
+    }
+    
+    public double obtenerSueldo(){
+        return getDiasTrabajados() * getSueldoPorDia();
+    }
+    public void mostrar(){
+        super.mostrar();
+        System.out.println("Salario: "+obtenerSueldo());
+    }
     
 }
