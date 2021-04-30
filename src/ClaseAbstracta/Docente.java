@@ -28,5 +28,43 @@ abstract class Docente {
         this.apellidos = apellidos;
         this.aIngreso = aIngreso;
     }
+    abstract public double obtenerSueldo();
+
+    public int getCi() {
+        return ci;
+    }
+
+    public void setCi(int ci) {
+        this.ci = ci;
+    }
+
+    public String getNombres() {
+        return nombres;
+    }
+
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public int getaIngreso() {
+        return aIngreso;
+    }
+
+    public void setaIngreso(int aIngreso) {
+        this.aIngreso = aIngreso;
+    }
+    public void mostrar(){
+        System.out.println("CI: "+getCi());
+        System.out.println("Nombres y Apellidos: "+getNombres()+" "+getApellidos());
+        System.out.println("Anio de ingreso: " + getaIngreso());
+    }
     
 }
