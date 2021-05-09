@@ -46,9 +46,11 @@ public class Interino extends Docente{
         this.sueldoPorDia = sueldoPorDia;
     }
     
+    @Override
     public double obtenerSueldo(){
         return getDiasTrabajados() * getSueldoPorDia();
     }
+    @Override
     public void mostrar(){
         super.mostrar();
         System.out.println("Salario: "+obtenerSueldo());

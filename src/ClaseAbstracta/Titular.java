@@ -37,6 +37,7 @@ public class Titular extends Docente {
         this.sueldoBase = sueldoBase;
     }
 
+    @Override
     public double obtenerSueldo() {
         Calendar anio = Calendar.getInstance();
         int aActual = anio.get(Calendar.YEAR);
@@ -53,6 +54,7 @@ public class Titular extends Docente {
             return (getSueldoBase() * 0.20) + sueldoBase;
         }
     }
+    @Override
     public void mostrar(){
         System.out.println("Salario: "+ obtenerSueldo());
     }
