@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Supermercado;
+package Recibo;
 
 /**
  *
  * @author Andrés Aquin
  */
-public class Producto {
+public class Mueble {
     private int codigo;
     private String descripcion;
-    private double precio;
+    private float precio;
 
-    public Producto(int codigo, String descripcion, double precio) {
+    public Mueble(int codigo, String descripcion, float precio) {
         this.codigo = codigo;
         this.descripcion = descripcion;
         this.precio = precio;
@@ -36,13 +36,11 @@ public class Producto {
         this.descripcion = descripcion;
     }
 
-    public double getPrecio() {
+    public float getPrecio() {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(float precio) {
         this.precio = precio;
-    }
-    
-    
+    }  
 }

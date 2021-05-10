@@ -3,17 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Supermercado;
+package Recibo;
 
 /**
  *
  * @author Andrés Aquin
  */
-public class Cliente {
+public class Proveedor {
     private int ci;
     private String nombre;
 
-    public Cliente(int ci, String nombre) {
+    public Proveedor(int ci, String nombre) {
         this.ci = ci;
         this.nombre = nombre;
     }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Supermercado;
+package Recibo;
 
 /**
  *
@@ -14,10 +14,10 @@ public class Comprobante {
     protected int numero;
     protected Fecha fecha;
 
-    public Comprobante(char tipo, int numero, Fecha fecha) {
+    public Comprobante(char tipo, int numero,int dia, int mes, int anio) {
         this.tipo = tipo;
         this.numero = numero;
-        this.fecha = fecha;
+        fecha = new Fecha(dia, mes, anio);
     }
 
     public char getTipo() {
