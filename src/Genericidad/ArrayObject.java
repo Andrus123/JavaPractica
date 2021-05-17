@@ -18,4 +18,37 @@ public class ArrayObject {
         this.n = 0;
         v = new Object[87];
     }
+
+    public void adicionar(Object a) {
+        n = n + 1;
+        v[n] = a;
+    }
+
+    public Object obtiene(int i) {
+        return (v[i]);
+    }
+
+    public boolean esvacia() {
+        if (n == 0) {
+            return true;
+        }
+        return false;
+    }
+
+    public void eliminar(int i) {
+        if (!esvacia()) {
+            for (int k = i; k <= n; k++) {
+                v[k] = v[k + 1];
+            }
+            n--;
+        }else{
+            System.out.println("El ARRAY NO TIENE ELEMENTOS...");
+        }
+    }
+    
+    public void mostrar(){
+        for (int i = 1; i<=n; i++) {
+            System.out.print(v[i] + ", ");
+        }
+    }
 }
