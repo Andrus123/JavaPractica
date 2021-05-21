@@ -5,6 +5,8 @@
  */
 package Genericidad14;
 
+import Factura.Leer;
+
 /**
  *
  * @author Andrés Aquin
@@ -14,8 +16,14 @@ public class Empleado<V, T> {
     private String nombre;
     private T sueldo; //(Enteros, flotantes)
     
+    private int n;
+    private Empleado<Integer, Float>[] empleados;
+    
+    
     public Empleado(){
         this.nombre = "";
+        this.n=0;
+        empleados=new Empleado[25];
     }
     public Empleado(V i, String nom, T s){
         this.id = i;
@@ -36,6 +44,15 @@ public class Empleado<V, T> {
             e2.mostrar();
         }else{
             System.out.println("No existe el EMPLEADO con ese codigo");
+        }
+    }
+    
+    public void crearArray(){
+        String[] nom = {"Ana", "Sandra", "Juan", "Oscar", "Carlos", "Carmen","Marco", "Jesus","Daisy","Jhon"};
+        System.out.println("Numero de empleado: ");
+        n=Leer.datoInt();
+        for (int i = 0; i < n; i++) {
+            empleados[i]=new Empleado<>((int)(Math.random()*100),nom[(int)(Math.random()*10)], (float)(Math.random()*10000));
         }
     }
 
