@@ -53,6 +53,7 @@ public class Empleado<V, T> {
         n=Leer.datoInt();
         for (int i = 0; i < n; i++) {
             empleados[i]=new Empleado<>((int)(Math.random()*100),nom[(int)(Math.random()*10)], (float)(Math.random()*10000));
+            empleados[i].mostrar();
         }
     }
 
