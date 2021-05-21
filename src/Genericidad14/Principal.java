@@ -16,5 +16,8 @@ public class Principal<V, T> {
         e2.setId("ABC-30982020");
         e2.setNombre("Juan");
         e2.setSueldo(5000);
+        e2.mostrar();
+        
+        Empleado<Integer, Float> e1 = new Empleado<>(100, "Sandra", 6758.78f);
     }
 }
