@@ -60,11 +60,20 @@ public class Empleado<V, T> {
     }
     //buscar por sueldo a los empleados
     public void buscarEmpleado(){
+        int sw = 0;
         float sueldo = parseFloat(JOptionPane.showInputDialog("Sueldo a buscar", "0"));
         for(int i=0; i<n; i++){
             if(empleados[i].getSueldo().equals(sueldo)){
-                empleados[i].mostrar();
+                //empleados[i].mostrar();
+                JOptionPane.showMessageDialog(null, "ID: "+empleados[i].getId()+
+                        " Nombre: "+empleados[i].getNombre(),
+                        "Resultado de la busqueda",JOptionPane.INFORMATION_MESSAGE);
+                sw=1;
+                break;
             }
+        }
+        if(sw==0){
+                JOptionPane.showMessageDialog(null,"Sueldo de empleado no encontrado");
         }
     }
 
