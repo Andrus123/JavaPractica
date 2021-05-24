@@ -6,6 +6,8 @@
 package Genericidad14;
 
 import Factura.Leer;
+import static java.lang.Float.parseFloat;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -54,6 +56,15 @@ public class Empleado<V, T> {
         for (int i = 0; i < n; i++) {
             empleados[i]=new Empleado<>((int)(Math.random()*100),nom[(int)(Math.random()*10)], (float)(Math.random()*10000));
             empleados[i].mostrar();
+        }
+    }
+    //buscar por sueldo a los empleados
+    public void buscarEmpleado(){
+        float sueldo = parseFloat(JOptionPane.showInputDialog("Sueldo a buscar", "0"));
+        for(int i=0; i<n; i++){
+            if(empleados[i].getSueldo().equals(sueldo)){
+                empleados[i].mostrar();
+            }
         }
     }
 
