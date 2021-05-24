@@ -51,7 +51,7 @@ public class Empleado<V, T> {
     
     public void crearArray(){
         String[] nom = {"Ana", "Sandra", "Juan", "Oscar", "Carlos", "Carmen","Marco", "Jesus","Daisy","Jhon"};
-        System.out.println("Numero de empleado: ");
+        System.out.println("Numero de empleados: ");
         n=Leer.datoInt();
         for (int i = 0; i < n; i++) {
             empleados[i]=new Empleado<>((int)(Math.random()*100),nom[(int)(Math.random()*10)], (float)(Math.random()*10000));

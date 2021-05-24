@@ -21,5 +21,9 @@ public class Principal<V, T> {
         Empleado<Integer, Float> e1 = new Empleado<>(100, "Sandra", 6758.78f);
         e1.mostrar();        
         e1.buscar(e2, 100);
+        
+        Empleado o1=new Empleado();
+        o1.crearArray();
+        o1.buscarEmpleado();
     }
 }
