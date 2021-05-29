@@ -4,10 +4,18 @@
  * and open the template in the editor.
  */
 package Clasesgenericas;
+
 /**
  *
  * @author Andrés Aquin
  */
 public class Vector<E> {
     private Vector vector = new Vector();
+    
+    public Vector(){
+        Vector v = new Vector();
+    }
+    
+    
+    
 }
