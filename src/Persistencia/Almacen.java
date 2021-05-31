@@ -29,6 +29,12 @@ public class Almacen implements Serializable{
             System.out.println("Error: "+ e);
         }
     }
+    
+    public void listar(){
+        for (int i = 0; i < productos.length; i++) {
+            productos[i].mostrar();
+        }
+    }
 
     public String getNombre() {
         return nombre;
