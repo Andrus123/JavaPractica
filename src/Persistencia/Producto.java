@@ -5,22 +5,17 @@
  */
 package Persistencia;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Andrés Aquin
  */
-public class Producto {
+public class Producto implements Serializable{
     private int codigo;
     private String nombre;
     private String tipo;
     private float precio;
-    
-    public Producto(){
-        this.codigo = 213;
-        this.nombre = "";
-        this.tipo = "";
-        this.precio = 0;
-    }
 
     public Producto(int codigo, String nombre, String tipo, float precio) {
         this.codigo = codigo;
