@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/andru/OneDrive/Documentos/NetBeansProjects/JavaPractica/INF121D/src/Clasesgenericas/Principal.java</file>
-            <file>file:/C:/Users/andru/OneDrive/Documentos/NetBeansProjects/JavaPractica/INF121D/src/Clasesgenericas/Usuarios.java</file>
-            <file>file:/C:/Users/andru/OneDrive/Documentos/NetBeansProjects/JavaPractica/INF121D/src/Clasesgenericas/Wallet.java</file>
+            <file>file:/C:/Users/andru/OneDrive/Documentos/NetBeansProjects/JavaPractica/INF121D/src/Persistencia/PersistenciaAlmacen.java</file>
+            <file>file:/C:/Users/andru/OneDrive/Documentos/NetBeansProjects/JavaPractica/INF121D/src/Persistencia/Almacen.java</file>
+            <file>file:/C:/Users/andru/OneDrive/Documentos/NetBeansProjects/JavaPractica/INF121D/src/Persistencia/Producto.java</file>
+            <file>file:/C:/Users/andru/OneDrive/Documentos/NetBeansProjects/JavaPractica/INF121D/src/Persistencia/Principal.java</file>
         </group>
     </open-files>
 </project-private>

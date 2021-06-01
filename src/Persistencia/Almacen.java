@@ -18,6 +18,7 @@ public class Almacen implements Serializable{
 
     public Almacen() {
         this.nombre = "";
+        this.cont = 0;
         this.productos = new Producto[4];
     }
     
@@ -31,7 +32,7 @@ public class Almacen implements Serializable{
     }
     
     public void listar(){
-        for (int i = 0; i < productos.length; i++) {
+        for (int i = 1; i < productos.length; i++) {
             productos[i].mostrar();
         }
     }

@@ -24,7 +24,7 @@ public class PersistenciaAlmacen extends Almacen {
     public void guardar(Almacen a1) {
         try {
             ObjectOutputStream w1 = new ObjectOutputStream(new FileOutputStream("Almacen.dat"));
-            w1.writeObject(w1);
+            w1.writeObject(a1);
             w1.close();
         } catch (IOException e) {
             System.out.println("Error: " + e);
