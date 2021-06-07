@@ -5,11 +5,13 @@
  */
 package Final;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Andrés Aquin
  */
-public class Fecha {
+public class Fecha implements Serializable{
      private int dia;
     private int mes;
     private int anio;

@@ -5,11 +5,13 @@
  */
 package Final;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Andrés Aquin
  */
-public class Computadora {
+public class Computadora implements Serializable{
     private int cod;
     private String marca;
     private float precio;

@@ -5,11 +5,13 @@
  */
 package Final;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Andrés Aquin
  */
-public class Cliente {
+public class Cliente implements Serializable{
     private int ci;
     private String nombres;
     

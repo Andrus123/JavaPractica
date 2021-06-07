@@ -5,11 +5,13 @@
  */
 package Final;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Andrés Aquin
  */
-public class Comprobante {
+public class Comprobante implements Serializable{
     protected Fecha fecha;
 
     public Comprobante(int dia, int mes, int anio) {
